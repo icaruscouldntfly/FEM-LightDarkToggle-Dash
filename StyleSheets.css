@@ -1,0 +1,136 @@
+body {
+  background-size: cover;
+  transition: background-image 1s ease-in-out, transform 1s ease-in-out;
+}
+
+body.slide-up {
+  transform: translateY(-100%);
+}
+
+.btnlight{
+  position: fixed;
+  top: 50%;
+  left: 36.5%;
+  transform: translate(-50%, -50%);
+}
+
+a{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  border: 2px solid #000000;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  border-radius: 30px;
+}
+
+a span{
+  position: relative;
+  z-index: 2;
+}
+
+a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 30px;
+  background: #014B82;
+  transition: all .35s;
+}
+
+a:hover{
+  color: #014B82;
+}
+
+a:hover:after{
+  width: 100%;
+}
+
+
+
+.btndark {
+  cursor: pointer;
+  overflow:hidden;
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: #ffffff ;
+  border: 2px solid #575757;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  border-radius: 30px;
+  position: fixed;
+  top: 50%;
+  left: 63.5%;
+  transform: translate(-50%, -50%);
+}
+
+.btndark:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  background: #808080;
+  left: 100%;
+  bottom: 0;
+  transition: all .3s;
+  opacity: 0.4;
+}
+
+.btndark:hover:before {
+  width: 100%;
+  left:0;
+  background-color: #808080
+}
+
+
+.btnopt {
+  background-image: linear-gradient(#014B82,#808080);
+  background-repeat: no-repeat;
+  transition: background-size .5s, color .5s;
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  border-radius: 30px;
+  top: 367px;
+  left: 43.4%;
+}
+.btnopt, .btnopt, .btnopt {
+  background-position: 50% 50%;
+}
+.btnopt, .btnopt, .btnopt {
+  background-size: 100% 0%;
+}
+.btnopt {
+  background-size: 0% 0%;
+}
+.btnopt:hover {
+  background-size: 100% 100%;
+  color: #fff;
+}
